@@ -1,0 +1,51 @@
+## Clases, contenedor *vector*
+
+Implementar la clase ***Civilizacion¹*** con los siguientes atributos:
+
+- Nombre
+- Ubicación en *x*
+- Ubicación en *y*
+- Puntuación
+
+Implementar la clase ***VideoGame*²** con los siguientes atributos:
+
+- Nombre de usuario.
+- **Vector** de civilizaciones**³**.
+
+y los siguientes métodos:
+
+- Agregar civilización (`push_back()`) (*recibe un objeto de tipo **Civilizacion***).
+- Insertar en una posición válida (`insert()`) *(recibe un objeto de tipo **Civilizacion** y la posición a insertar*).
+- Crear civilizaciones (inicializa ***n*** civilizaciones).
+- Primera civilización (`front()`) *(regresa la primer civilización del vector)*.
+- Último civilización (`back()`) *(regresa la último civilización del vector)*.
+- Ordenar (`sort()`) por ***nombre***.
+- Ordenar (`sort()`) por  ubicación en ***x***.
+- Ordenar (`sort()`) por  ubicación en ***y***.
+- Ordenar (`sort()`) por ***puntuación***.
+- Eliminar civilización ( `erase()`) *(por nombre; recibe nombre de la civilización a eliminar)*.
+- Buscar civilización (`find()`) (regresa un puntero a la civilización).
+- Total (regresa la cantidad de civilizaciones almacenadas en el `vector<Civilizacion>`).
+
+Implementar un menú para manipular un objeto de la clase ***VideoGame***, con las siguientes opciones:
+
+1. Nombre de usuario *(le pone un usuario al videogame)*.
+2. Agregar civilización *(pide los datos de la civilización y agrega tal civilización al **videogame** usando `push_back()`)*.
+3. Insertar civilización *(pide los datos de la civilización, pide **n** y agrega tal civilización al **videogame** en la posición **n** -validar posición-)*.
+4. Crear civilizaciones *(pide la cantidad de civilizaciones a inicializar y pide los datos de la civilización -inicializador-)*.
+5. Primera civilización *(muestra la civilización retornada por la función **Primera civilización**; verificar que el Total sea mayor a cero)*.
+6. Última civilización *(muestra la última civilización retornada por la función **Última civilización**; verificar que el Total sea mayor a cero)*.
+7. Ordenar *(muestra opciones para ordenar por nombre (ascendente), posición en x (ascendente), posición en y (ascendente) y por puntuación (descendente))*.
+8. Eliminar civilización *(pregunta por el nombre de la civilización, la busca en el* `vector<Civilizacion>` *y la elimina).*
+9. Buscar (*pide el nombre de la civilización, la busca en el* `vector<Civilizacion>` *y si la encuentra muestra la información de la civilización*)*.*
+10. Modificar (*pide el nombre de la civilización, la busca en el* `vector<Civilizacion>` *y si la encuentra hacer lo siguiente: mostrar la información de la civilización y un pequeño menú para modificar los atributos -nombre, ubicación, puntuación-  de la civilización).*
+11. Resumen *(imprime en formato tabla (`setw()`) el nombre de cada civilización, ubicación en x, ubicación en y, puntuación)*.
+12. Salir.
+
+---
+
+> **¹**: Crear los métodos de acceso para los atributos.
+
+> **²**: El comportamiento de la clase ***VideoGame*** será como una administradora de objetos de la clase ***Civilizacion***.
+
+> **³**: Usar `vector<Civilizacion>`.
